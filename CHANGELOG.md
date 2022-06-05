@@ -4,7 +4,7 @@
  * @Author: cdl
  * @Date: 2022-06-06 05:16:15
  * @LastEditors: cdl
- * @LastEditTime: 2022-06-06 06:03:05
+ * @LastEditTime: 2022-06-06 06:11:41
 -->
 # <a href="https://github.com/235926/Vue-Music" target="_blank">Vue-Music 更新日志</a>
 - 🌟 更新
@@ -32,5 +32,3 @@
 - 🎉 新增 安装 Element-plus 自带的图标库 @element-plus/icons-vue
 - 🎉 新增 安装 svg 识别插件 vite-plugin-svg-icons
 - 🎉 新增 安装 进度条插件 nprogress
-- 🎉 新增
-- 🎉 新增

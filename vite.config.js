@@ -3,7 +3,7 @@
  * @Author: cdl
  * @Date: 2022-06-06 05:10:48
  * @LastEditors: cdl
- * @LastEditTime: 2022-06-06 05:44:27
+ * @LastEditTime: 2022-06-06 06:13:51
  */
 import { defineConfig, loadEnv } from 'vite' // 帮手函数，这样不用 jsdoc 注解也可以获取类型提示
 import vue from '@vitejs/plugin-vue' // 现在通过 @vitejs/plugin-vue 这个插件来支持 Vue
@@ -70,7 +70,6 @@ export default defineConfig(({ command, mode }) => {
 				output: {
 					manualChunks: {
 						'element-plus': ['element-plus'],
-						echarts: ['echarts'],
 					}
 				}
 			},
