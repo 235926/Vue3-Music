@@ -3,15 +3,12 @@
  * @Author: cdl
  * @Date: 2022-06-06 05:50:27
  * @LastEditors: cdl
- * @LastEditTime: 2022-06-06 05:52:15
+ * @LastEditTime: 2022-06-06 09:52:10
 -->
 <template>
-    <div>home</div>
+	<div>home</div>
 </template>
 
-<script setup>
+<script setup></script>
 
-</script>
-
-<style lang='scss' scoped>
-</style>
+<style lang="scss" scoped></style>

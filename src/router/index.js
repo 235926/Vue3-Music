@@ -3,11 +3,16 @@
  * @Author: cdl
  * @Date: 2022-06-06 05:46:17
  * @LastEditors: cdl
- * @LastEditTime: 2022-06-06 05:52:51
+ * @LastEditTime: 2022-06-06 07:05:34
  */
 import { createRouter, createWebHashHistory } from 'vue-router' // 路由
 
+
 export const routes = [
+    {
+        path: '/',
+        redirect: '/home'
+    },
     {
         path: '/home',
         name: 'home',
@@ -15,6 +20,7 @@ export const routes = [
         meta: { title: '首页' }
     },
 ]
+
 
 /**
  * 创建一个可以被 Vue 应用程序使用的路由实例

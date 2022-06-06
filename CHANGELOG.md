@@ -1,10 +1,10 @@
 <!--
  * @Description: 更新日志
- * @Version: 0.0.0
+ * @Version: 0.0.1
  * @Author: cdl
  * @Date: 2022-06-06 05:16:15
  * @LastEditors: cdl
- * @LastEditTime: 2022-06-06 06:11:41
+ * @LastEditTime: 2022-06-06 10:02:19
 -->
 # <a href="https://github.com/235926/Vue-Music" target="_blank">Vue-Music 更新日志</a>
 - 🌟 更新
@@ -18,8 +18,15 @@
 - ⚠️ 警告
 
 
-## "version": "0.0.0"
+## "version": "0.0.1"
 ## "date": "2022.06.26"
+## "author": "cdl"
+- 🎉 新增 Element-plus 默认语言调整为中文
+
+
+
+## "version": "0.0.0"
+## "date": "2022.06.06"
 ## "author": "cdl"
 
 - 🎉 新增 项目初始化

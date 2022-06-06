@@ -3,31 +3,17 @@
  * @Author: cdl
  * @Date: 2022-06-06 05:10:48
  * @LastEditors: cdl
- * @LastEditTime: 2022-06-06 06:10:51
+ * @LastEditTime: 2022-06-06 09:51:44
 -->
 <template>
-    <router-view></router-view>
+	<el-config-provider :locale="zhCn">
+		<!-- 路由出口 -->
+		<router-view />
+	</el-config-provider>
 </template>
 
 <script setup>
-import { search } from '@/api/user.js' // api
-
-
-const getSearch = () => {
-    const params = {
-        keywords: '海阔天空'
-    }
-    search(params).then(res => {
-        console.log(res)
-    })
-}
-
-
-// 组件挂载后，此方法执行后，页面显示
-onMounted(() => {
-    getSearch()
-})
+import zhCn from 'element-plus/es/locale/lang/zh-cn' // 中文
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>
