@@ -1,10 +1,9 @@
 <!--
  * @Description: 更新日志
- * @Version: 0.0.1
  * @Author: cdl
  * @Date: 2022-06-06 05:16:15
  * @LastEditors: cdl
- * @LastEditTime: 2022-06-06 10:02:19
+ * @LastEditTime: 2022-06-30 14:40:48
 -->
 # <a href="https://github.com/235926/Vue-Music" target="_blank">Vue-Music 更新日志</a>
 - 🌟 更新
@@ -17,17 +16,23 @@
 - ❄️ 删除
 - ⚠️ 警告
 
+## Version: "0.0.2"，Date: "2022.06.26"，Author: "cdl"
 
-## "version": "0.0.1"
-## "date": "2022.06.26"
-## "author": "cdl"
+- 🚧 调整 element-plus 改为按需引入
+- 🎉 新增 自动导入 ElementPlus 图标 插件 `unplugin-icons`
+- 🎉 新增 让 vue 脚本设置语法支持 name 属性 `vite-plugin-vue-setup-extend`
+- 🎉 新增 注册全局组件
+- 🎉 新增 重置样式表 normalize.css
+- 🎉 新增 svg 图标优化 npm run svgo
+
+
+
+## Version: "0.0.1"，Date: "2022.06.26"，Author: "cdl"
 - 🎉 新增 Element-plus 默认语言调整为中文
 
 
 
-## "version": "0.0.0"
-## "date": "2022.06.06"
-## "author": "cdl"
+## Version: "0.0.0"，Date: "2022.06.06"，Author: "cdl"
 
 - 🎉 新增 项目初始化
 - 🎉 新增 安装路由 vue-router@4

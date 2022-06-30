@@ -3,20 +3,22 @@
  * @Author: cdl
  * @Date: 2022-06-06 05:10:48
  * @LastEditors: cdl
- * @LastEditTime: 2022-06-06 06:03:34
+ * @LastEditTime: 2022-06-30 14:35:55
  */
 import { createApp } from 'vue'
 import App from './App.vue'
 const app = createApp(App)
 
-// 引入 ElementPlus UI 库
-import ElementPlus from 'element-plus'
-import 'element-plus/dist/index.css'
+// 重置样式表
+import 'normalize.css/normalize.css'
+
+// 引入 自定义的scss文件
+import '@/assets/scss/index.scss'
 
 // 全局使用 ElementPlus 自带的图标
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 for (let [key, component] of Object.entries(ElementPlusIconsVue)) {
-    app.component(key, component)
+	app.component(key, component)
 }
 
 // 引入进度条插件
@@ -31,5 +33,11 @@ import router from '@/router/index.js'
 // 页面共享状态
 import pinia from '@/pinia/index.js'
 
-app.use(router).use(pinia).use(ElementPlus)
+// 注册全局组件
+import * as Components from '@/plugin/global-components.js'
+Object.entries(Components).forEach(([key, component]) => {
+	app.component(key, component)
+})
+
+app.use(router).use(pinia)
 app.mount('#app')
