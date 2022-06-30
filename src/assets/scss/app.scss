@@ -3,8 +3,13 @@
  * @Author: cdl
  * @Date: 2022-06-13 16:44:45
  * @LastEditors: cdl
- * @LastEditTime: 2022-06-30 14:43:54
+ * @LastEditTime: 2022-06-30 17:05:18
  */
+
+* {
+	box-sizing: border-box;
+}
+
 html,
 body,
 #app {
@@ -284,4 +289,19 @@ body,
 	&.pdf {
 		color: #fa4e4e;
 	}
+}
+
+.clearfix:after,
+.clearfix:before {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
 }

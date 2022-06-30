@@ -3,7 +3,7 @@
  * @Author: cdl
  * @Date: 2022-06-06 05:16:15
  * @LastEditors: cdl
- * @LastEditTime: 2022-06-30 14:40:48
+ * @LastEditTime: 2022-06-30 17:34:39
 -->
 # <a href="https://github.com/235926/Vue-Music" target="_blank">Vue-Music 更新日志</a>
 - 🌟 更新
@@ -15,6 +15,14 @@
 - 🌈 重构
 - ❄️ 删除
 - ⚠️ 警告
+
+## Version: "0.0.3"，Date: "2022.06.26"，Author: "cdl"
+
+- 🎉 新增 布局页面
+- 🎉 新增 头部页面
+- 🎉 新增 常用 scss 文件
+
+
 
 ## Version: "0.0.2"，Date: "2022.06.26"，Author: "cdl"
 
