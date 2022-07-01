@@ -3,7 +3,7 @@
  * @Author: cdl
  * @Date: 2022-06-06 05:10:48
  * @LastEditors: cdl
- * @LastEditTime: 2022-06-30 14:35:55
+ * @LastEditTime: 2022-07-01 16:21:35
  */
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -27,6 +27,9 @@ import '@/plugin/nprogress.js'
 // 引入 svg 图标注册脚本
 import 'virtual:svg-icons-register'
 
+// 同级组件传值
+import mitt from 'mitt'
+
 // 引入路由
 import router from '@/router/index.js'
 
@@ -41,3 +44,6 @@ Object.entries(Components).forEach(([key, component]) => {
 
 app.use(router).use(pinia)
 app.mount('#app')
+
+// 同级组件传值
+app.config.globalProperties.mittBus = mitt()

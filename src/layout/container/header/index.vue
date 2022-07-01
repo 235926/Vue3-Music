@@ -3,7 +3,7 @@
  * @Author: cdl
  * @Date: 2022-06-30 15:08:53
  * @LastEditors: cdl
- * @LastEditTime: 2022-06-30 17:32:15
+ * @LastEditTime: 2022-07-01 11:04:03
 -->
 <template>
 	<el-header class="layout-header">
@@ -17,7 +17,8 @@
 						<span class="triangle-up"></span>
 					</router-link>
 				</div>
-				<el-button link class="btn fr">登录</el-button>
+
+				<LoginBtn />
 				<span class="creator fr">创作者中心</span>
 				<el-input v-model="state.search" class="search fr" placeholder="音乐/视频/电台/用户">
 					<template #prefix>
@@ -40,6 +41,7 @@
 </template>
 
 <script setup>
+import LoginBtn from './login/index.vue' // login 组件
 const route = useRoute() // 路由参数
 const router = useRouter() // 路由实例
 const { proxy } = getCurrentInstance() // vue 实例

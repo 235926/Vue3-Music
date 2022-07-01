@@ -1,7 +1,7 @@
 {
   "name": "vue3-music",
   "private": true,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -13,10 +13,12 @@
     "axios": "^0.27.2",
     "element-plus": "^2.2.6",
     "js-cookie": "^3.0.1",
+    "mitt": "^3.0.0",
     "normalize.css": "^8.0.1",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.14",
     "pinia-plugin-persist": "^1.0.0",
+    "qrcodejs2-fixes": "^0.0.2",
     "vue": "^3.2.37",
     "vue-router": "4"
   },

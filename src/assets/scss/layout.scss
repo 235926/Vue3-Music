@@ -3,7 +3,7 @@
  * @Author: cdl
  * @Date: 2022-06-30 15:11:50
  * @LastEditors: cdl
- * @LastEditTime: 2022-06-30 17:30:37
+ * @LastEditTime: 2022-07-01 11:20:47
  */
 .layout-container {
 	width: 100%;
@@ -21,19 +21,18 @@
 
 		// 头部上半部分
 		.nav-top {
-			height: var(--dl-header-height);
-			background: var(--dl-header-bg-color);
+			height: var(--header-height);
+			background: var(--header-bg-color);
 			border-bottom: 1px solid var(--el-color-black);
 
 			.wrap {
-				line-height: 70px;
-
 				.logo {
-					margin: 0;
+					margin: 18px 0 0;
 					color: var(--el-color-white);
 				}
 
 				.nav-list {
+					height: 100%;
 					margin-left: 30px;
 					display: flex;
 

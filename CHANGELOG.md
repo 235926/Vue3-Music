@@ -3,7 +3,7 @@
  * @Author: cdl
  * @Date: 2022-06-06 05:16:15
  * @LastEditors: cdl
- * @LastEditTime: 2022-06-30 17:34:39
+ * @LastEditTime: 2022-07-01 16:21:14
 -->
 # <a href="https://github.com/235926/Vue-Music" target="_blank">Vue-Music 更新日志</a>
 - 🌟 更新
@@ -15,6 +15,14 @@
 - 🌈 重构
 - ❄️ 删除
 - ⚠️ 警告
+
+## Version: "0.0.4"，Date: "2022.07.01"，Author: "cdl"
+
+- 🎉 新增 登录指示板
+- 🎉 新增 扫码登录
+- 🎉 新增 邮箱登录
+- 🎉 新增 事件总线插件 mitt 做同级组件传值
+
 
 ## Version: "0.0.3"，Date: "2022.06.26"，Author: "cdl"
 
