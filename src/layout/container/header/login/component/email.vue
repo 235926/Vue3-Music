@@ -3,7 +3,7 @@
  * @Author: cdl
  * @Date: 2022-07-01 09:43:24
  * @LastEditors: cdl
- * @LastEditTime: 2022-07-01 18:14:31
+ * @LastEditTime: 2022-07-01 18:31:52
 -->
 <template>
 	<div class="email-wrap">
@@ -88,13 +88,13 @@ const switchLogin = (key) => {
 	.btn-wrap {
 		width: 100%;
 		height: 50px;
-		line-height: 50px;
 		position: absolute;
 		bottom: 0;
 		left: 0;
 		right: 0;
 		padding: 0 20px;
 		border-top: 1px solid var(--el-border-color);
+		display: flex;
 	}
 }
 </style>

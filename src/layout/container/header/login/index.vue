@@ -3,7 +3,7 @@
  * @Author: cdl
  * @Date: 2022-07-01 10:58:56
  * @LastEditors: cdl
- * @LastEditTime: 2022-07-01 18:08:30
+ * @LastEditTime: 2022-07-01 18:30:49
 -->
 <template>
 	<div class="login-wrap">
@@ -29,6 +29,7 @@
 
 <script setup>
 import Dashboard from './component/dashboard.vue' // 登录指示板
+import Phone from './component/phone.vue' // 登录指示板
 import Code from './component/code.vue' // 扫码登录
 import Email from './component/email.vue' // 邮箱登录
 const route = useRoute() // 路由参数
@@ -40,6 +41,7 @@ const component = shallowRef({
 	dashboard: Dashboard,
 	code: Code,
 	email: Email,
+	phone: Phone,
 })
 
 // 定义响应式数据

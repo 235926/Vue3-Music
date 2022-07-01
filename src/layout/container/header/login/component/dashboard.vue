@@ -3,13 +3,13 @@
  * @Author: cdl
  * @Date: 2022-07-01 15:10:02
  * @LastEditors: cdl
- * @LastEditTime: 2022-07-01 18:21:33
+ * @LastEditTime: 2022-07-01 18:30:28
 -->
 <template>
 	<div class="dashboard-wrap">
 		<div class="left">
 			<img :src="Dashboard" />
-			<el-button type="primary">手机号登录</el-button>
+			<el-button type="primary" @click="switchLogin('phone')">手机号登录</el-button>
 			<el-button>注册</el-button>
 		</div>
 		<div class="right">

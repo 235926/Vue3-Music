@@ -3,7 +3,7 @@
  * @Author: cdl
  * @Date: 2022-06-06 05:16:15
  * @LastEditors: cdl
- * @LastEditTime: 2022-07-01 16:21:14
+ * @LastEditTime: 2022-07-01 18:36:05
 -->
 # <a href="https://github.com/235926/Vue-Music" target="_blank">Vue-Music 更新日志</a>
 - 🌟 更新
@@ -15,6 +15,12 @@
 - 🌈 重构
 - ❄️ 删除
 - ⚠️ 警告
+
+## Version: "0.0.5"，Date: "2022.07.01"，Author: "cdl"
+
+- 🚧 调整 修改手机号登录
+
+
 
 ## Version: "0.0.4"，Date: "2022.07.01"，Author: "cdl"
 

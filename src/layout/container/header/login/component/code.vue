@@ -3,7 +3,7 @@
  * @Author: cdl
  * @Date: 2022-07-01 11:08:45
  * @LastEditors: cdl
- * @LastEditTime: 2022-07-01 16:54:37
+ * @LastEditTime: 2022-07-01 18:34:53
 -->
 <template>
 	<div class="code-wrap">
@@ -68,7 +68,7 @@ const onLoginQrCreate = (key) => {
 	loginQrCreate(params).then((res) => {
 		if (res.code === 200) {
 			new QRCode(qrcodeRef.value, {
-				text: res.data.qrurl,
+				text: res.data?.qrurl,
 				width: 130,
 				height: 130,
 				colorDark: '#000000',
