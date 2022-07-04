@@ -1,9 +1,7 @@
 /*
  * @Description: ajax 请求接口
- * @Author: cdl
  * @Date: 2022-06-06 05:59:22
- * @LastEditors: cdl
- * @LastEditTime: 2022-07-01 10:30:42
+ * @LastEditTime: 2022-07-04 14:22:51
  */
 import axios from 'axios' // ajax 请求插件
 import { Local } from '@/utils/storage.js' // 浏览器存储

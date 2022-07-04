@@ -1,9 +1,7 @@
 <!--
  * @Description: 网易云音乐
- * @Author: cdl
  * @Date: 2022-06-06 05:10:48
- * @LastEditors: cdl
- * @LastEditTime: 2022-06-30 14:41:06
+ * @LastEditTime: 2022-07-04 14:19:42
 -->
 # Vue 3 + Vite2 + ElementPlus + Pinia
 - 网易云音乐 以 Vue3.O 为主要版本

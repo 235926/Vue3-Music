@@ -1,9 +1,7 @@
 <!--
  * @Description: 布局页面
- * @Author: cdl
  * @Date: 2022-06-30 14:46:44
- * @LastEditors: cdl
- * @LastEditTime: 2022-06-30 15:08:09
+ * @LastEditTime: 2022-07-04 14:22:37
 -->
 <template>
 	<component :is="Defaults" />

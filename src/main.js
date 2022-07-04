@@ -1,9 +1,7 @@
 /*
  * @Description: 入口文件 加载组件 初始化等
- * @Author: cdl
  * @Date: 2022-06-06 05:10:48
- * @LastEditors: cdl
- * @LastEditTime: 2022-07-01 16:21:35
+ * @LastEditTime: 2022-07-04 14:24:05
  */
 import { createApp } from 'vue'
 import App from './App.vue'

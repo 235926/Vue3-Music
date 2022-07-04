@@ -1,9 +1,7 @@
 /*
  * @Description: 路由根页面
- * @Author: cdl
  * @Date: 2022-06-06 05:46:17
- * @LastEditors: cdl
- * @LastEditTime: 2022-06-30 16:35:55
+ * @LastEditTime: 2022-07-04 14:23:11
  */
 import { createRouter, createWebHashHistory } from 'vue-router' // 路由
 

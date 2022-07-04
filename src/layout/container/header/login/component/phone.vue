@@ -1,13 +1,11 @@
 <!--
  * @Description: 手机登录
- * @Author: cdl
  * @Date: 2022-07-01 11:06:14
- * @LastEditors: cdl
- * @LastEditTime: 2022-07-01 18:32:18
+ * @LastEditTime: 2022-07-04 14:25:28
 -->
 <template>
-	<div class="phone-wrap">
-		<el-form ref="formRef" :model="state.form" class="mlr80">
+	<div class="login-wrap">
+		<el-form :model="state.form" class="mlr80">
 			<el-form-item>
 				<el-input v-model="state.form.phone" placeholder="请输入账号" />
 			</el-form-item>
@@ -25,6 +23,9 @@
 			<el-link type="primary" :underline="false" @click="switchLogin('dashboard')">
 				<el-icon><ArrowLeft /></el-icon>其他登录方式
 			</el-link>
+			<el-link :underline="false" @click="switchLogin('register')">
+				<el-icon><ArrowLeft /></el-icon>没有账号？免费注册
+			</el-link>
 		</div>
 	</div>
 </template>
@@ -40,14 +41,14 @@ const state = reactive({
 	// 表单
 	form: {
 		phone: '13439594353',
-		password: 'cdl235926',
+		password: 'zhuyou235926',
 	},
 })
 
 /**
  * @description: 登录
  * @return {*}
- * @author: cdl
+
  */
 const onLogin = () => {
 	login(state.form).then((res) => {
@@ -63,7 +64,7 @@ const onLogin = () => {
  * @description: 切换登录方式
  * @param {*} key
  * @return {*}
- * @author: cdl
+
  */
 const switchLogin = (key) => {
 	proxy.mittBus.emit('switchLogin', key)
@@ -73,31 +74,4 @@ const switchLogin = (key) => {
 onMounted(() => {})
 </script>
 
-<style lang="scss" scoped>
-.phone-wrap {
-	padding-bottom: 40px;
-
-	.btn-login {
-		:deep(.el-form-item__content) {
-			justify-content: center;
-		}
-
-		.el-button {
-			width: 200px;
-			margin: 10px 0;
-		}
-	}
-
-	.btn-wrap {
-		width: 100%;
-		height: 50px;
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		padding: 0 20px;
-		border-top: 1px solid var(--el-border-color);
-		display: flex;
-	}
-}
-</style>
+<style lang="scss" scoped></style>

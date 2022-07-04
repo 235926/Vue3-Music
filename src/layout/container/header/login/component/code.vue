@@ -1,9 +1,7 @@
 <!--
  * @Description: 扫码登录
- * @Author: cdl
  * @Date: 2022-07-01 11:08:45
- * @LastEditors: cdl
- * @LastEditTime: 2022-07-01 18:34:53
+ * @LastEditTime: 2022-07-04 14:25:18
 -->
 <template>
 	<div class="code-wrap">
@@ -44,7 +42,7 @@ const state = reactive({
  * @description: 1. 二维码 key 生成接口
  * @description: 调用此接口可生成一个 key
  * @return {*}
- * @author: cdl
+
  */
 const onLoginQrKey = () => {
 	loginQrKey().then((res) => {
@@ -59,7 +57,7 @@ const onLoginQrKey = () => {
  * @description: 可选参数: qrimg 传入后会额外返回二维码图片 base64 编码
  * @param {*} key
  * @return {*}
- * @author: cdl
+
  */
 const onLoginQrCreate = (key) => {
 	let params = {
@@ -84,7 +82,7 @@ const onLoginQrCreate = (key) => {
  * @description: 轮询此接口可获取二维码扫码状态,800 为二维码过期,801 为等待扫码,802 为待确认,803 为授权登录成功(803 状态码下会返回 cookies)
  * @description: 必选参数: key,由第一个接口生成
  * @return {*}
- * @author: cdl
+
  */
 const onLoginQrCheck = (key) => {
 	let params = {
@@ -111,7 +109,7 @@ const onLoginQrCheck = (key) => {
 /**
  * @description: 点击刷新
  * @return {*}
- * @author: cdl
+
  */
 const refresh = () => {
 	state.overdue = false
@@ -123,7 +121,7 @@ const refresh = () => {
  * @description: 切换登录方式
  * @param {*} key
  * @return {*}
- * @author: cdl
+
  */
 const switchLogin = (key) => {
 	proxy.mittBus.emit('switchLogin', key)

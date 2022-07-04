@@ -1,9 +1,7 @@
 <!--
  * @Description: 头部
- * @Author: cdl
  * @Date: 2022-06-30 15:08:53
- * @LastEditors: cdl
- * @LastEditTime: 2022-07-01 11:04:03
+ * @LastEditTime: 2022-07-04 14:25:41
 -->
 <template>
 	<el-header class="layout-header">
@@ -54,7 +52,7 @@ const state = reactive({
 /**
  * @description: 获取一级路由
  * @param {*} computed
- * @author: cdl
+
  */
 const navList = computed(() => {
 	return route.matched[0].children
@@ -63,7 +61,7 @@ const navList = computed(() => {
 /**
  * @description: 获取发现音乐子级路由
  * @param {*} computed
- * @author: cdl
+
  */
 const subnav = computed(() => {
 	return route.matched[0].children[0].children

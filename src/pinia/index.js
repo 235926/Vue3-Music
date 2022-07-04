@@ -1,9 +1,7 @@
 /*
  * @Description: pinia
- * @Author: cdl
  * @Date: 2022-06-06 05:46:12
- * @LastEditors: cdl
- * @LastEditTime: 2022-06-06 05:55:49
+ * @LastEditTime: 2022-07-04 14:22:45
  */
 // https://pinia.vuejs.org/
 import { createPinia } from 'pinia' // pinia

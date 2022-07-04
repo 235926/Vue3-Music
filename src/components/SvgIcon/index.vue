@@ -1,9 +1,7 @@
 <!--
  * @Description: svg 图标组件
- * @Author: cdl
  * @Date: 2022-07-01 15:41:40
- * @LastEditors: cdl
- * @LastEditTime: 2022-07-01 15:52:26
+ * @LastEditTime: 2022-07-04 14:24:34
 -->
 <template>
 	<svg class="svg-icon" aria-hidden="true">

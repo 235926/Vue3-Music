@@ -1,16 +1,14 @@
 <!--
  * @Description: 登录指示板
- * @Author: cdl
  * @Date: 2022-07-01 15:10:02
- * @LastEditors: cdl
- * @LastEditTime: 2022-07-01 18:30:28
+ * @LastEditTime: 2022-07-04 14:25:21
 -->
 <template>
 	<div class="dashboard-wrap">
 		<div class="left">
 			<img :src="Dashboard" />
 			<el-button type="primary" @click="switchLogin('phone')">手机号登录</el-button>
-			<el-button>注册</el-button>
+			<el-button @click="switchLogin('register')">注册</el-button>
 		</div>
 		<div class="right">
 			<ul>
@@ -57,7 +55,7 @@ const state = reactive({
 /**
  * @description: 切换条款选中
  * @return {*}
- * @author: cdl
+
  */
 const termsChange = (value) => {
 	Session.set('termsChange', value)
@@ -67,7 +65,7 @@ const termsChange = (value) => {
  * @description: 切换登录方式
  * @param {*} key
  * @return {*}
- * @author: cdl
+
  */
 const switchLogin = (key) => {
 	if (state.terms) {
