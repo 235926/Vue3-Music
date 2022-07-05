@@ -1,7 +1,7 @@
 <!--
  * @Description: 手机登录
  * @Date: 2022-07-01 11:06:14
- * @LastEditTime: 2022-07-04 14:25:28
+ * @LastEditTime: 2022-07-05 15:29:19
 -->
 <template>
 	<div class="login-wrap">
@@ -41,7 +41,7 @@ const state = reactive({
 	// 表单
 	form: {
 		phone: '13439594353',
-		password: 'zhuyou235926',
+		password: 'cdl235926',
 	},
 })
 

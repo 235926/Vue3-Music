@@ -1,12 +1,12 @@
 <!--
  * @Description: 排行榜
-
  * @Date: 2022-06-30 16:29:53
-
- * @LastEditTime: 2022-06-30 16:29:57
+ * @LastEditTime: 2022-07-05 17:15:00
 -->
 <template>
-	<div>排行榜</div>
+	<div>
+		<div>排行榜</div>
+	</div>
 </template>
 
 <script setup>

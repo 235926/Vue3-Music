@@ -1,7 +1,7 @@
 <!--
  * @Description: 手机号注册
  * @Date: 2022-07-04 10:16:59
- * @LastEditTime: 2022-07-04 16:29:30
+ * @LastEditTime: 2022-07-05 15:19:54
 -->
 <template>
 	<div class="login-wrap">
@@ -58,7 +58,7 @@
 			</el-form-item>
 
 			<el-form-item class="btn-login">
-				<el-button type="primary" round @click="nextClick">下一步</el-button>
+				<el-button type="primary" round @click="nextClick('captcha')">下一步</el-button>
 			</el-form-item>
 		</el-form>
 
@@ -81,6 +81,8 @@ const state = reactive({
 	// 表单
 	form: {
 		countrycode: '+86',
+		phone: '13439594353',
+		password: 'cdl235926',
 	},
 	countriesCodeList: [], // 国家编码列表
 	// 验证规则
@@ -155,11 +157,15 @@ const verifyPassword = () => {
  * @description: 下一步
  * @return {*}
  */
-const nextClick = () => {
+const nextClick = (key) => {
 	formRef.value.validate((valid) => {
 		if (valid) {
 			if (!state.isAlphabetDigital && !state.isPassLength) {
-				console.log('下一步')
+				proxy.mittBus.emit('switchLogin', key)
+				proxy.mittBus.emit('phoneRegister', {
+					countrycode: state.form.countrycode,
+					phone: state.form.phone,
+				})
 			}
 		} else {
 			return false

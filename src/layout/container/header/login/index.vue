@@ -1,11 +1,11 @@
 <!--
  * @Description: 登录根组件
  * @Date: 2022-07-01 10:58:56
- * @LastEditTime: 2022-07-04 16:35:45
+ * @LastEditTime: 2022-07-05 17:18:06
 -->
 <template>
 	<div class="login-container">
-		<el-button link class="btn fr" @click="openDialog">登录</el-button>
+		<el-button link class="btn fr" @click="openDialog">登录{{ state.num }}</el-button>
 
 		<el-dialog
 			v-model="state.isShowDialog"
@@ -30,10 +30,9 @@
 import Dashboard from './component/dashboard.vue' // 登录指示板
 import Phone from './component/phone.vue' // 手机登录
 import Register from './component/register.vue' // 手机号注册
+import Captcha from './component/captcha.vue' // 验证码验证
 import Code from './component/code.vue' // 扫码登录
 import Email from './component/email.vue' // 邮箱登录
-const route = useRoute() // 路由参数
-const router = useRouter() // 路由实例
 const { proxy } = getCurrentInstance() // vue 实例
 
 // 跟踪自身 .value 变化的 ref，配合 component 使用
@@ -41,6 +40,7 @@ const component = shallowRef({
 	dashboard: Dashboard,
 	phone: Phone,
 	register: Register,
+	captcha: Captcha,
 	code: Code,
 	email: Email,
 })
@@ -49,7 +49,7 @@ const component = shallowRef({
 const state = reactive({
 	isShowDialog: false, // 弹窗状态
 	title: '登录', // 标题
-	activeName: 'dashboard', // 登录方式
+	activeName: 'captcha', // 登录方式
 })
 
 // 打开弹窗
@@ -77,6 +77,9 @@ watch(
 			case 'register':
 				state.title = '手机号注册'
 				break
+			case 'captcha':
+				state.title = '验证码验证'
+				break
 			case 'email':
 				state.title = '邮箱登录'
 				break
@@ -97,14 +100,14 @@ onMounted(() => {
 
 // 组件销毁完成后执行的函数
 onUnmounted(() => {
-	proxy.mittBus.off('switchLogin')
+	proxy.mittBus.off('switchLogin', () => {})
 })
 </script>
 
 <style lang="scss" scoped>
 .login-container {
 	:deep(.login-wrap) {
-		padding-bottom: 40px;
+		padding-bottom: 50px;
 
 		.btn-login {
 			.el-form-item__content {

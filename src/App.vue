@@ -1,7 +1,7 @@
 <!--
  * @Description: 入口页面
  * @Date: 2022-06-06 05:10:48
- * @LastEditTime: 2022-07-04 14:21:58
+ * @LastEditTime: 2022-07-05 13:47:22
 -->
 <template>
 	<el-config-provider :locale="zhCn">
