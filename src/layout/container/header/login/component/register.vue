@@ -1,7 +1,7 @@
 <!--
  * @Description: 手机号注册
  * @Date: 2022-07-04 10:16:59
- * @LastEditTime: 2022-07-05 15:19:54
+ * @LastEditTime: 2022-07-06 15:47:05
 -->
 <template>
 	<div class="login-wrap">
@@ -21,7 +21,7 @@
 								:value="item.code"
 							>
 								<span class="fl">{{ item.zh }}</span>
-								<span class="fr"> +{{ item.code }} </span>
+								<span class="fr">+{{ item.code }} </span>
 							</el-option>
 						</el-select>
 					</template>
@@ -80,7 +80,7 @@ const formRef = ref(null)
 const state = reactive({
 	// 表单
 	form: {
-		countrycode: '+86',
+		countrycode: '86',
 		phone: '13439594353',
 		password: 'cdl235926',
 	},

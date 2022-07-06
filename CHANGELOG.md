@@ -1,7 +1,7 @@
 <!--
  * @Description: 更新日志
  * @Date: 2022-06-06 05:16:15
- * @LastEditTime: 2022-07-04 16:37:40
+ * @LastEditTime: 2022-07-06 15:48:56
 -->
 # <a href="https://github.com/235926/Vue-Music" target="_blank">Vue-Music 更新日志</a>
 - 🌟 更新
@@ -13,6 +13,12 @@
 - 🌈 重构
 - ❄️ 删除
 - ⚠️ 警告
+
+## Version: "0.0.7"，Date: "2022.07.06"
+
+- 🎯 优化 解决注册到验证码的时候传递的手机号不刷新的问题
+
+
 
 ## Version: "0.0.7"，Date: "2022.07.05"
 

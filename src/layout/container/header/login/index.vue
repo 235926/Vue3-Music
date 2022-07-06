@@ -1,7 +1,7 @@
 <!--
  * @Description: 登录根组件
  * @Date: 2022-07-01 10:58:56
- * @LastEditTime: 2022-07-05 17:18:06
+ * @LastEditTime: 2022-07-06 15:03:21
 -->
 <template>
 	<div class="login-container">
@@ -20,7 +20,13 @@
 			</template>
 
 			<el-scrollbar :max-height="400">
-				<component :is="component[state.activeName]" @closeDialog="closeDialog" />
+				<Dashboard v-show="state.activeName === 'dashboard'" />
+				<Phone v-show="state.activeName === 'phone'" />
+				<Register v-show="state.activeName === 'register'" />
+				<Captcha v-show="state.activeName === 'captcha'" />
+				<Code v-show="state.activeName === 'code'" />
+				<Email v-show="state.activeName === 'email'" />
+				<!-- <component :is="component[state.activeName]" @closeDialog="closeDialog" /> -->
 			</el-scrollbar>
 		</el-dialog>
 	</div>

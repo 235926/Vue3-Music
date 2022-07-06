@@ -1,7 +1,7 @@
 <!--
  * @Description: 验证码验证
  * @Date: 2022-07-05 09:50:27
- * @LastEditTime: 2022-07-05 17:21:43
+ * @LastEditTime: 2022-07-06 15:45:47
 -->
 <template>
 	<div class="login-wrap">
@@ -22,16 +22,12 @@
 </template>
 
 <script setup>
-import { captchaSent } from '@/api/index.js' // api
-import { deepClone } from '@/utils/tools.js' // 工具方法
-const route = useRoute() // 路由参数
-const router = useRouter() // 路由实例
 const { proxy } = getCurrentInstance() // vue 实例
 
 // 定义响应式数据
-const state = shallowRef({
-	countrycode: '123',
-	phone: '234',
+const state = reactive({
+	countrycode: '',
+	phone: '',
 })
 
 /**
@@ -46,9 +42,8 @@ const switchLogin = (key) => {
 // 组件挂载后，此方法执行后，页面显示
 onMounted(() => {
 	proxy.mittBus.on('phoneRegister', (data) => {
-		state.countrycode = data.countrycode
+		state.countrycode = data.countrycode.slice(0)
 		state.phone = data.phone.substring(0, 3) + '****' + data.phone.substring(7, 11)
-		console.log(state)
 	})
 })
 
