@@ -1,7 +1,7 @@
 <!--
  * @Description: 手机号注册
  * @Date: 2022-07-04 10:16:59
- * @LastEditTime: 2022-07-06 15:47:05
+ * @LastEditTime: 2022-07-11 15:00:45
 -->
 <template>
 	<div class="login-wrap">
@@ -162,10 +162,13 @@ const nextClick = (key) => {
 		if (valid) {
 			if (!state.isAlphabetDigital && !state.isPassLength) {
 				proxy.mittBus.emit('switchLogin', key)
-				proxy.mittBus.emit('phoneRegister', {
-					countrycode: state.form.countrycode,
-					phone: state.form.phone,
-				})
+
+				setTimeout(() => {
+					proxy.mittBus.emit('phoneRegister', {
+						countrycode: state.form.countrycode,
+						phone: state.form.phone,
+					})
+				}, 100)
 			}
 		} else {
 			return false

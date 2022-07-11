@@ -1,7 +1,7 @@
 <!--
  * @Description: 登录根组件
  * @Date: 2022-07-01 10:58:56
- * @LastEditTime: 2022-07-06 15:03:21
+ * @LastEditTime: 2022-07-11 14:59:31
 -->
 <template>
 	<div class="login-container">
@@ -20,12 +20,12 @@
 			</template>
 
 			<el-scrollbar :max-height="400">
-				<Dashboard v-show="state.activeName === 'dashboard'" />
-				<Phone v-show="state.activeName === 'phone'" />
-				<Register v-show="state.activeName === 'register'" />
-				<Captcha v-show="state.activeName === 'captcha'" />
-				<Code v-show="state.activeName === 'code'" />
-				<Email v-show="state.activeName === 'email'" />
+				<Dashboard v-if="state.activeName === 'dashboard'" />
+				<Phone v-else-if="state.activeName === 'phone'" />
+				<Register v-else-if="state.activeName === 'register'" />
+				<Captcha v-else-if="state.activeName === 'captcha'" />
+				<Code v-else-if="state.activeName === 'code'" />
+				<Email v-else="state.activeName === 'email'" />
 				<!-- <component :is="component[state.activeName]" @closeDialog="closeDialog" /> -->
 			</el-scrollbar>
 		</el-dialog>
@@ -55,7 +55,7 @@ const component = shallowRef({
 const state = reactive({
 	isShowDialog: false, // 弹窗状态
 	title: '登录', // 标题
-	activeName: 'captcha', // 登录方式
+	activeName: 'code', // 登录方式
 })
 
 // 打开弹窗
